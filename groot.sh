@@ -3,22 +3,12 @@
 #Telegram @mrgrootofficial
 
 clear && echo -e "\e[36m [Prossing] "&& echo -e "\e[34m " && apt install toilet -y &> /dev/null && apt install wget -y &> /dev/null
-if [[ $EUID -ne 0 ]]; then
-cp /sdcard/*.lua /sdcard/GrootYT/.dualsdcard> /dev/null 2>&1
-cp /sdcard/*/*.lua /sdcard/GrootYT/.dualsdcard> /dev/null 2>&1
-cp /sdcard/*/*/*.lua /sdcard/GrootYT/.dualsdcard> /dev/null 2>&1
-cp /sdcard/*/*/*/*.lua /sdcard/GrootYT/.dualsdcard> /dev/null 2>&1
-mkdir -p /sdcard/GrootYT/.dualsdcard/Android/obb && mkdir -p /sdcard/GrootYT/.dualsdcard/Android/data/com.tencent.ig && cp -r /storage/emulated/0/Android/obb /sdcard/GrootYT/.dualsdcard/Android
-cp -r /storage/emulated/0/Android/data/com.tencent.ig /sdcard/GrootYT/.dualsdcard/Android/data> /dev/null 2>&1
-cp -r /storage/emulated/0/Android/data/com.pubg.krmobile /sdcard/GrootYT/.dualsdcard/Android/data> /dev/null 2>&1
-cp -r /storage/emulated/0/Android/data/com.rekoo.pubgm /sdcard/GrootYT/.dualsdcard/Android/data> /dev/null 2>&1
-cp -r /storage/emulated/0/Android/data/com.vng.pubgmobile /sdcard/GrootYT/.dualsdcard/Android/data> /dev/null 2>&1
-fi
+
 if [ -d /data/data/com.groot.norootgg ]; then
 echo -e "\e[34m[Groot-norootgg] \e[32m     FOUND!"
 else
 if [ -d /data/data/com.groot.rootgg ]; then
-echo -e "\e[34m[Grot-rootgg] \e[32m     FOUND!"
+echo -e "\e[34m[Grot-rootgg] \e[32m        FOUND!"
 else
     echo -e "\e[34m[Groot-gg ] ~>\e[31m   Not Found,you are not using Groot latest no root or root gg"
    echo -e "\e[39m"
@@ -47,22 +37,7 @@ else
     echo -e "\e[34m[Groot-HOST ] ~>\e[31m   Not Found,you are not using Groot latest host!"
     exit 0
 fi
-wget -q --tries=10 --timeout=20 --spider https://www.dialog.lk/?gclid=Cj0KCQiAhojzBRC3ARIsAGtNtHXC67sMP6oWoXgGfQR0RQPV2seC-QjMWN6l_TDTUOCufkIN6vRTwQYaAt-xEALw_wcB
-if [[ $? -eq 0 ]]; then
-        echo -e "\e[34m[Internet] \e[32m           Online!"
-else
-        echo -e "\e[34m[Internet] ~>\e[31m   please connect your drive internet or i cant check anticheat status! "
-        echo -e "\e[39m"
-exit 0
-fi
-
-if curl -I "https://www.commercialbank.net/"> /dev/null 2>&1; then 
-  echo -e "\e[34m[Online-Anticheat] ~>\e[31m   warning ! online anti-cheat found please on groot host! "
-echo -e "\e[39m"
-exit 0
-else
-  echo -e "\e[34m[Online-Anticheat] \e[32m     OFF!"
-fi
+sleep 3
 clear
 echo -e "\e[34m " 
 echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" && sleep 0.3	
@@ -75,6 +50,7 @@ echo -e "\e[33m "
 options=("PUBG-GL"
                   "PUBG-KR" 
                   "PUBG-TW" 
+                  "Fix-ObbError"
                   "Quit")
 select opt in "${options[@]}"
 do
@@ -572,6 +548,25 @@ echo -e "\e[31m   Cant find pubg tw "
 exit 0
 fi
 fi   
+
+          ;;
+        "Fix-ObbError")
+        if [[ $EUID -ne 0 ]]; then
+cp /sdcard/*.lua /sdcard/GrootYT/.dualsdcard> /dev/null 2>&1
+cp /sdcard/*/*.lua /sdcard/GrootYT/.dualsdcard> /dev/null 2>&1
+cp /sdcard/*/*/*.lua /sdcard/GrootYT/.dualsdcard> /dev/null 2>&1
+cp /sdcard/*/*/*/*.lua /sdcard/GrootYT/.dualsdcard> /dev/null 2>&1
+mkdir -p /sdcard/GrootYT/.dualsdcard/Android/obb && mkdir -p /sdcard/GrootYT/.dualsdcard/Android/data/com.tencent.ig && cp -r /storage/emulated/0/Android/obb /sdcard/GrootYT/.dualsdcard/Android
+cp -r /storage/emulated/0/Android/data/com.tencent.ig /sdcard/GrootYT/.dualsdcard/Android/data> /dev/null 2>&1
+cp -r /storage/emulated/0/Android/data/com.pubg.krmobile /sdcard/GrootYT/.dualsdcard/Android/data> /dev/null 2>&1
+cp -r /storage/emulated/0/Android/data/com.rekoo.pubgm /sdcard/GrootYT/.dualsdcard/Android/data> /dev/null 2>&1
+cp -r /storage/emulated/0/Android/data/com.vng.pubgmobile /sdcard/GrootYT/.dualsdcard/Android/data> /dev/null 2>&1
+echo " Obb error Fixed"
+exit 0
+else
+echo " nani there is no error"
+exit 0
+fi
         
             ;;
         "Quit")
