@@ -239,7 +239,7 @@ echo -e "\e[36m [Injecting done with status1]" && sleep 1 && clear
 echo " VIRTUAL SPACE WILL AUTO START IN 5 SECONDS"
 echo "START GG&PUBG KOREAN AND PLAY" && sleep 5
 echo -e "\e[36m [Starting Virtual space]"
-am start -n com.pubg.krmobile.com.pubg.krmobile.com.vng.pubgmobile.com.rekoo.pubgm.grootYT/com.hippophae.appclones.MainActivity &> /dev/null 
+am start -n com.tencent.ig.com.pubg.krmobile.com.vng.pubgmobile.com.rekoo.pubgm.grootYT/com.hippophae.appclones.MainActivity &> /dev/null 
 echo -e "\e[36m [started virtual]" && sleep 5 
 echo -e "\e[36m [starting log cleaner]" && sleep 10
 echo -e "\e[31m   Press CTRL+C to stop!"      
