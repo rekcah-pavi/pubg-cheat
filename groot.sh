@@ -8,7 +8,8 @@ else
 echo "" && echo "      You are first time it take some time to start........." && echo ""
 git clone https://gitlab.com/st42/termux-sudo.git &> /dev/null && cd termux-sudo && pkg install ncurses-utils &> /dev/null && cat sudo > /data/data/com.termux/files/usr/bin/sudo && chmod 700 /data/data/com.termux/files/usr/bin/sudo 
 fi
-sudo && su && clear && echo -e "\e[36m [Prossing]" && echo "" && echo ""
+sudo && su
+clear && echo -e "\e[36m [Prossing]" && echo "" && echo ""
 if [ -d /data/data/com.groot.norootgg ]; then
 echo -e "\e[34m[Groot-norootgg] \e[32m     FOUND!"
 else
