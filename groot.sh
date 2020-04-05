@@ -64,7 +64,7 @@ echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" && sleep 0.3
 echo -e "\e[36m [Select Your PUBG...] "
 PS3=' 
 
-Enter Your choice [1-5]~> '
+Enter Your choice ~> '
 echo -e "\e[33m "
 options=("PUBG-GL"
                   "PUBG-KR" 
@@ -75,9 +75,97 @@ select opt in "${options[@]}"
 do
     case $opt in
         "PUBG-GL")
- clear
-if [[ $EUID -ne 0 ]]; then
-echo -e "\e[36m[NoRoot_Found] \e[34m Started no root progress.. .." && sleep 2
+ echo ""
+ 
+options=("Root" "Noroot" "Quit")
+select opt in "${options[@]}"
+do
+    case $opt in
+        "Root")
+            
+            
+            echo -e "\e[36m[Root_Found] \e[34m Started root progress.. .." && sleep 2
+if [ -d /data/data/com.tencent.ig ]; then
+
+echo -e "\e[36m [Found Pubg globel]" && sleep 1 && clear
+echo -e "\e[36m [Injecting Fix crash]" && sleep 1 && clear
+cd /data/data/com.tencent.ig && rm -rf app_crashrecord files && echo " globel anti-crash by groot " > files && echo " globel anti-crash by groot " > app_crashrecord
+echo -e "\e[36m [Injecting done with status1]" && sleep 1 && clear
+echo -e "\e[36m [Starting RootGG]"
+am start -n com.groot.rootgg/com.sndvuhxyctu.MainActivity &> /dev/null 
+echo -e "\e[36m [GG started]" && sleep 2 && echo "" && clear && echo -e "\e[36m [GG started]"
+am start -n com.termux/com.termux.app.TermuxActivity &> /dev/null 
+echo -e "\e[36m [Starting pubg]" && sleep 2 && echo "" && clear && echo -e "\e[36m [Started pubg]"
+am start -n com.tencent.ig/com.epicgames.ue4.SplashActivity &> /dev/null && sleep 10
+echo -e "\e[36m [started pubg globel]" && sleep 5 && clear
+echo -e "\e[36m [starting cleaner]" && sleep 1
+echo -e "\e[31m   Press CTRL+C to stop!"      
+i=1
+j=0
+while [ $i -lt 19 ]
+do
+clear
+ cd /sdcard &> /dev/null
+rm -rf tencent Tencent .backups MidasOversea &> /dev/null
+touch tencent Tencent .backups MidasOversea &> /dev/null
+
+rm -rf /storage/emulated/0/Android/data/com.tencent.ig/cache &> /dev/null
+touch /storage/emulated/0/Android/data/com.tencent.ig/cache &> /dev/null
+
+cd /storage/emulated/0/Android/data/com.tencent.ig/files &> /dev/null
+rm - rf ProgramBinaryCache tbslog ca-bundle.pem cacheFile.txt login-identifier.txt vmpcloudconfig.json UE4Game/ShadowTrackerExtra/Engine &> /dev/null
+touch ProgramBinaryCache tbslog ca-bundle.pem cacheFile.txt login-identifier.txt vmpcloudconfig.json UE4Game/ShadowTrackerExtra/Engine &> /dev/null
+
+cd /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved &> /dev/null
+rm -rf GameErrorNoRecords afd Logs IGH5Cache ImageDownload Pandora GameErrorNoRecords afd Logs IGH5Cache ImageDownload Pandora RoleInfo SaveGames/Activity SaveGames/Match StatEventReportedFlag UpdateInfo Config/Android/AntiCheat.ini Paks/apollo_reslist.flist filelist.json puffer_temp puffer_res.eifs PufferFileList.json PufferTmpDir RoleInfo Paks/*.*cures.ifs.res &> /dev/null
+touch GameErrorNoRecords afd Logs IGH5Cache ImageDownload Pandora GameErrorNoRecords afd Logs IGH5Cache ImageDownload Pandora RoleInfo SaveGames/Activity SaveGames/Match StatEventReportedFlag UpdateInfo Config/Android/AntiCheat.ini Paks/apollo_reslist.flist filelist.json puffer_temp puffer_res.eifs PufferFileList.json PufferTmpDir RoleInfo &> /dev/null
+
+cd /data/data/com.tencent.ig &> /dev/null
+rm - rf app_appcache app_bugly app_crashrecord app_databases app_dex app_geolocation app_tbs app_textures app_webview app_webview_imsdk_inner_webview cache code_cache files files/tss_tmp cache/* &> /dev/null
+touch app_appcache app_bugly app_crashrecord app_databases app_dex app_geolocation app_tbs app_textures app_webview app_webview_imsdk_inner_webview cache code_cache files files/tss_tmp cache/* &> /dev/null
+
+cd /data/data/com.tencent.ig/databases &> /dev/null
+rm rf beacon_db bugly_db_ config.db iMSDK.db tdm.db &> /dev/null
+touch rm rf beacon_db bugly_db_ config.db iMSDK.db tdm.db &> /dev/null
+   echo -e ""
+   echo -e "\e[33m Running..........[press CTRL+C to stop]"
+   echo ""
+   echo ""
+   echo -e "\e[36m Logs cleared $i Times, Looping......."
+   echo ""
+   echo""
+   echo -e "\e[36m Bypassed $k Times, ......."
+   
+   k=$i*$j
+ sleep 300
+  ((i+++))  
+  ((i*j))
+  
+done
+am start -n com.termux/com.termux.app.TermuxActivity &> /dev/null 
+clear & echo " ITS COFEE BREAK , IAM TIRED" && sleep 2 
+apt install sl &> /dev/null && sl && clear
+echo "ITS COFEE BREAK , IAM TIRED"
+echo "ANTIBAN OFFED"
+echo " YOU ARE PLAYING PUBG 1.30 HORUS DAMN, PLEASE RESTART GAME "
+echo "DONT FORGET TO SEND YOUR SS TO MR.GROOT"
+exit 0
+
+
+
+else        
+echo -e "\e[31m   Cant find pubg globel "      
+exit 0
+fi
+            
+            
+            
+            
+            
+            ;;
+        "Noroot")
+            
+            echo -e "\e[36m[NoRoot_Found] \e[34m Started no root progress.. .." && sleep 2
 if [ -d /data/data/com.tencent.ig.com.pubg.krmobile.com.vng.pubgmobile.com.rekoo.pubgm.grootYT ]; then
 if [ -d /data/data/com.tencent.ig.com.pubg.krmobile.com.vng.pubgmobile.com.rekoo.pubgm.grootYT/system/data/0/com.tencent.ig ]; then
 
@@ -152,21 +240,65 @@ else
 echo -e "\e[31m   cant find  groot globel virtual"    
 exit 0
 fi
+            
+            
+            
+            
+            ;;      
+        "Quit")
+            exit 0
+            ;;
+        *) echo "invalid option $REPLY";;
+    esac
+done
 
-else
-echo -e "\e[36m[Root_Found] \e[34m Started root progress.. .." && sleep 2
-if [ -d /data/data/com.tencent.ig ]; then
+
+
+
+
+
+
+
+
+
+
+            
+            
+            
+            
+            
+            
+#-------------------------------------------------------        
+            
+            
+            
+            
+            
+            
+            
+            ;;
+        "PUBG-KR")
+ echo ""   
+options=("Root" "Noroot" "Quit")
+select opt in "${options[@]}"
+do
+    case $opt in
+        "Root")
+            
+            
+            echo -e "\e[36m[Root_Found] \e[34m Started root progress.. .." && sleep 2
+if [ -d /data/data/com.pubg.krmobile ]; then
 
 echo -e "\e[36m [Found Pubg globel]" && sleep 1 && clear
 echo -e "\e[36m [Injecting Fix crash]" && sleep 1 && clear
-cd /data/data/com.tencent.ig && rm -rf app_crashrecord files && echo " globel anti-crash by groot " > files && echo " globel anti-crash by groot " > app_crashrecord
+cd /data/data/com.pubg.krmobile && rm -rf app_crashrecord files && echo " globel anti-crash by groot " > files && echo " globel anti-crash by groot " > app_crashrecord
 echo -e "\e[36m [Injecting done with status1]" && sleep 1 && clear
 echo -e "\e[36m [Starting RootGG]"
 am start -n com.groot.rootgg/com.sndvuhxyctu.MainActivity &> /dev/null 
 echo -e "\e[36m [GG started]" && sleep 2 && echo "" && clear && echo -e "\e[36m [GG started]"
 am start -n com.termux/com.termux.app.TermuxActivity &> /dev/null 
 echo -e "\e[36m [Starting pubg]" && sleep 2 && echo "" && clear && echo -e "\e[36m [Started pubg]"
-am start -n com.tencent.ig/com.epicgames.ue4.SplashActivity &> /dev/null && sleep 10
+am start -n com.pubg.krmobile/com.epicgames.ue4.SplashActivity &> /dev/null && sleep 10
 echo -e "\e[36m [started pubg globel]" && sleep 5 && clear
 echo -e "\e[36m [starting cleaner]" && sleep 1
 echo -e "\e[31m   Press CTRL+C to stop!"      
@@ -179,22 +311,22 @@ clear
 rm -rf tencent Tencent .backups MidasOversea &> /dev/null
 touch tencent Tencent .backups MidasOversea &> /dev/null
 
-rm -rf /storage/emulated/0/Android/data/com.tencent.ig/cache &> /dev/null
-touch /storage/emulated/0/Android/data/com.tencent.ig/cache &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/cache &> /dev/null
+touch /storage/emulated/0/Android/data/com.pubg.krmobile/cache &> /dev/null
 
-cd /storage/emulated/0/Android/data/com.tencent.ig/files &> /dev/null
+cd /storage/emulated/0/Android/data/com.pubg.krmobile/files &> /dev/null
 rm - rf ProgramBinaryCache tbslog ca-bundle.pem cacheFile.txt login-identifier.txt vmpcloudconfig.json UE4Game/ShadowTrackerExtra/Engine &> /dev/null
 touch ProgramBinaryCache tbslog ca-bundle.pem cacheFile.txt login-identifier.txt vmpcloudconfig.json UE4Game/ShadowTrackerExtra/Engine &> /dev/null
 
-cd /storage/emulated/0/Android/data/com.tencent.ig/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved &> /dev/null
+cd /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved &> /dev/null
 rm -rf GameErrorNoRecords afd Logs IGH5Cache ImageDownload Pandora GameErrorNoRecords afd Logs IGH5Cache ImageDownload Pandora RoleInfo SaveGames/Activity SaveGames/Match StatEventReportedFlag UpdateInfo Config/Android/AntiCheat.ini Paks/apollo_reslist.flist filelist.json puffer_temp puffer_res.eifs PufferFileList.json PufferTmpDir RoleInfo Paks/*.*cures.ifs.res &> /dev/null
 touch GameErrorNoRecords afd Logs IGH5Cache ImageDownload Pandora GameErrorNoRecords afd Logs IGH5Cache ImageDownload Pandora RoleInfo SaveGames/Activity SaveGames/Match StatEventReportedFlag UpdateInfo Config/Android/AntiCheat.ini Paks/apollo_reslist.flist filelist.json puffer_temp puffer_res.eifs PufferFileList.json PufferTmpDir RoleInfo &> /dev/null
 
-cd /data/data/com.tencent.ig &> /dev/null
+cd /data/data/com.pubg.krmobile &> /dev/null
 rm - rf app_appcache app_bugly app_crashrecord app_databases app_dex app_geolocation app_tbs app_textures app_webview app_webview_imsdk_inner_webview cache code_cache files files/tss_tmp cache/* &> /dev/null
 touch app_appcache app_bugly app_crashrecord app_databases app_dex app_geolocation app_tbs app_textures app_webview app_webview_imsdk_inner_webview cache code_cache files files/tss_tmp cache/* &> /dev/null
 
-cd /data/data/com.tencent.ig/databases &> /dev/null
+cd /data/data/com.pubg.krmobile/databases &> /dev/null
 rm rf beacon_db bugly_db_ config.db iMSDK.db tdm.db &> /dev/null
 touch rm rf beacon_db bugly_db_ config.db iMSDK.db tdm.db &> /dev/null
    echo -e ""
@@ -224,30 +356,18 @@ exit 0
 
 
 else        
-echo -e "\e[31m   Cant find pubg globel "      
+echo -e "\e[31m   Cant find pubg kr "      
 exit 0
 fi
-fi           
-            
-            
-            
-            
-            
-            
-#-------------------------------------------------------        
-            
-            
             
             
             
             
             
             ;;
-        "PUBG-KR")
+        "Noroot")
             
-clear
-if [[ $EUID -ne 0 ]]; then
-echo -e "\e[36m[NoRoot_Found] \e[34m Started no root progress.. .." && sleep 2
+            echo -e "\e[36m[NoRoot_Found] \e[34m Started no root progress.. .." && sleep 2
 if [ -d /data/data/com.tencent.ig.com.pubg.krmobile.com.vng.pubgmobile.com.rekoo.pubgm.grootYT ]; then
 if [ -d /data/data/com.tencent.ig.com.pubg.krmobile.com.vng.pubgmobile.com.rekoo.pubgm.grootYT/system/data/0/com.pubg.krmobile ]; then
 
@@ -322,21 +442,65 @@ else
 echo -e "\e[31m   cant find  groot new virtual"    
 exit 0
 fi
+            
+            
+            
+            
+            ;;      
+        "Quit")
+            exit 0
+            ;;
+        *) echo "invalid option $REPLY";;
+    esac
+done
 
-else
-echo -e "\e[36m[Root_Found] \e[34m Started root progress.. .." && sleep 2
-if [ -d /data/data/com.pubg.krmobile ]; then
+
+
+
+
+
+
+
+
+
+
+            
+            
+            
+            
+            
+#------------------------------------------------------        
+            
+            
+            
+            
+            
+            
+            
+            
+            ;;
+        "PUBG-TW")
+echo ""
+options=("Root" "Noroot" "Quit")
+select opt in "${options[@]}"
+do
+    case $opt in
+        "Root")
+            
+            
+            echo -e "\e[36m[Root_Found] \e[34m Started root progress.. .." && sleep 2
+if [ -d /data/data/com.rekoo.pubgm ]; then
 
 echo -e "\e[36m [Found Pubg globel]" && sleep 1 && clear
 echo -e "\e[36m [Injecting Fix crash]" && sleep 1 && clear
-cd /data/data/com.pubg.krmobile && rm -rf app_crashrecord files && echo " globel anti-crash by groot " > files && echo " globel anti-crash by groot " > app_crashrecord
+cd /data/data/com.rekoo.pubgm && rm -rf app_crashrecord files && echo " globel anti-crash by groot " > files && echo " globel anti-crash by groot " > app_crashrecord
 echo -e "\e[36m [Injecting done with status1]" && sleep 1 && clear
 echo -e "\e[36m [Starting RootGG]"
 am start -n com.groot.rootgg/com.sndvuhxyctu.MainActivity &> /dev/null 
 echo -e "\e[36m [GG started]" && sleep 2 && echo "" && clear && echo -e "\e[36m [GG started]"
 am start -n com.termux/com.termux.app.TermuxActivity &> /dev/null 
 echo -e "\e[36m [Starting pubg]" && sleep 2 && echo "" && clear && echo -e "\e[36m [Started pubg]"
-am start -n com.pubg.krmobile/com.epicgames.ue4.SplashActivity &> /dev/null && sleep 10
+am start -n com.rekoo.pubgm/com.epicgames.ue4.SplashActivity &> /dev/null && sleep 10
 echo -e "\e[36m [started pubg globel]" && sleep 5 && clear
 echo -e "\e[36m [starting cleaner]" && sleep 1
 echo -e "\e[31m   Press CTRL+C to stop!"      
@@ -349,22 +513,22 @@ clear
 rm -rf tencent Tencent .backups MidasOversea &> /dev/null
 touch tencent Tencent .backups MidasOversea &> /dev/null
 
-rm -rf /storage/emulated/0/Android/data/com.pubg.krmobile/cache &> /dev/null
-touch /storage/emulated/0/Android/data/com.pubg.krmobile/cache &> /dev/null
+rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/cache &> /dev/null
+touch /storage/emulated/0/Android/data/com.rekoo.pubgm/cache &> /dev/null
 
-cd /storage/emulated/0/Android/data/com.pubg.krmobile/files &> /dev/null
+cd /storage/emulated/0/Android/data/com.rekoo.pubgm/files &> /dev/null
 rm - rf ProgramBinaryCache tbslog ca-bundle.pem cacheFile.txt login-identifier.txt vmpcloudconfig.json UE4Game/ShadowTrackerExtra/Engine &> /dev/null
 touch ProgramBinaryCache tbslog ca-bundle.pem cacheFile.txt login-identifier.txt vmpcloudconfig.json UE4Game/ShadowTrackerExtra/Engine &> /dev/null
 
-cd /storage/emulated/0/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved &> /dev/null
+cd /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved &> /dev/null
 rm -rf GameErrorNoRecords afd Logs IGH5Cache ImageDownload Pandora GameErrorNoRecords afd Logs IGH5Cache ImageDownload Pandora RoleInfo SaveGames/Activity SaveGames/Match StatEventReportedFlag UpdateInfo Config/Android/AntiCheat.ini Paks/apollo_reslist.flist filelist.json puffer_temp puffer_res.eifs PufferFileList.json PufferTmpDir RoleInfo Paks/*.*cures.ifs.res &> /dev/null
 touch GameErrorNoRecords afd Logs IGH5Cache ImageDownload Pandora GameErrorNoRecords afd Logs IGH5Cache ImageDownload Pandora RoleInfo SaveGames/Activity SaveGames/Match StatEventReportedFlag UpdateInfo Config/Android/AntiCheat.ini Paks/apollo_reslist.flist filelist.json puffer_temp puffer_res.eifs PufferFileList.json PufferTmpDir RoleInfo &> /dev/null
 
-cd /data/data/com.pubg.krmobile &> /dev/null
+cd /data/data/com.rekoo.pubgm &> /dev/null
 rm - rf app_appcache app_bugly app_crashrecord app_databases app_dex app_geolocation app_tbs app_textures app_webview app_webview_imsdk_inner_webview cache code_cache files files/tss_tmp cache/* &> /dev/null
 touch app_appcache app_bugly app_crashrecord app_databases app_dex app_geolocation app_tbs app_textures app_webview app_webview_imsdk_inner_webview cache code_cache files files/tss_tmp cache/* &> /dev/null
 
-cd /data/data/com.pubg.krmobile/databases &> /dev/null
+cd /data/data/com.rekoo.pubgm/databases &> /dev/null
 rm rf beacon_db bugly_db_ config.db iMSDK.db tdm.db &> /dev/null
 touch rm rf beacon_db bugly_db_ config.db iMSDK.db tdm.db &> /dev/null
    echo -e ""
@@ -394,29 +558,18 @@ exit 0
 
 
 else        
-echo -e "\e[31m   Cant find pubg kr "      
+echo -e "\e[31m   Cant find pubg tw "      
 exit 0
 fi
-fi           
-            
-            
-            
-            
-            
-#------------------------------------------------------        
-            
-            
-            
             
             
             
             
             
             ;;
-        "PUBG-TW")
-clear
-if [[ $EUID -ne 0 ]]; then
-echo -e "\e[36m[NoRoot_Found] \e[34m Started no root progress.. .." && sleep 2
+        "Noroot")
+            
+            echo -e "\e[36m[NoRoot_Found] \e[34m Started no root progress.. .." && sleep 2
 if [ -d /data/data/com.tencent.ig.com.pubg.krmobile.com.vng.pubgmobile.com.rekoo.pubgm.grootYT ]; then
 if [ -d /data/data/com.tencent.ig.com.pubg.krmobile.com.vng.pubgmobile.com.rekoo.pubgm.grootYT/system/data/0/com.rekoo.pubgm ]; then
 
@@ -491,82 +644,28 @@ else
 echo -e "\e[31m   cant find  groot new virtual"    
 exit 0
 fi
-
-else
-echo -e "\e[36m[Root_Found] \e[34m Started root progress.. .." && sleep 2
-if [ -d /data/data/com.rekoo.pubgm ]; then
-
-echo -e "\e[36m [Found Pubg globel]" && sleep 1 && clear
-echo -e "\e[36m [Injecting Fix crash]" && sleep 1 && clear
-cd /data/data/com.rekoo.pubgm && rm -rf app_crashrecord files && echo " globel anti-crash by groot " > files && echo " globel anti-crash by groot " > app_crashrecord
-echo -e "\e[36m [Injecting done with status1]" && sleep 1 && clear
-echo -e "\e[36m [Starting RootGG]"
-am start -n com.groot.rootgg/com.sndvuhxyctu.MainActivity &> /dev/null 
-echo -e "\e[36m [GG started]" && sleep 2 && echo "" && clear && echo -e "\e[36m [GG started]"
-am start -n com.termux/com.termux.app.TermuxActivity &> /dev/null 
-echo -e "\e[36m [Starting pubg]" && sleep 2 && echo "" && clear && echo -e "\e[36m [Started pubg]"
-am start -n com.rekoo.pubgm/com.epicgames.ue4.SplashActivity &> /dev/null && sleep 10
-echo -e "\e[36m [started pubg globel]" && sleep 5 && clear
-echo -e "\e[36m [starting cleaner]" && sleep 1
-echo -e "\e[31m   Press CTRL+C to stop!"      
-i=1
-j=0
-while [ $i -lt 19 ]
-do
-clear
- cd /sdcard &> /dev/null
-rm -rf tencent Tencent .backups MidasOversea &> /dev/null
-touch tencent Tencent .backups MidasOversea &> /dev/null
-
-rm -rf /storage/emulated/0/Android/data/com.rekoo.pubgm/cache &> /dev/null
-touch /storage/emulated/0/Android/data/com.rekoo.pubgm/cache &> /dev/null
-
-cd /storage/emulated/0/Android/data/com.rekoo.pubgm/files &> /dev/null
-rm - rf ProgramBinaryCache tbslog ca-bundle.pem cacheFile.txt login-identifier.txt vmpcloudconfig.json UE4Game/ShadowTrackerExtra/Engine &> /dev/null
-touch ProgramBinaryCache tbslog ca-bundle.pem cacheFile.txt login-identifier.txt vmpcloudconfig.json UE4Game/ShadowTrackerExtra/Engine &> /dev/null
-
-cd /storage/emulated/0/Android/data/com.rekoo.pubgm/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved &> /dev/null
-rm -rf GameErrorNoRecords afd Logs IGH5Cache ImageDownload Pandora GameErrorNoRecords afd Logs IGH5Cache ImageDownload Pandora RoleInfo SaveGames/Activity SaveGames/Match StatEventReportedFlag UpdateInfo Config/Android/AntiCheat.ini Paks/apollo_reslist.flist filelist.json puffer_temp puffer_res.eifs PufferFileList.json PufferTmpDir RoleInfo Paks/*.*cures.ifs.res &> /dev/null
-touch GameErrorNoRecords afd Logs IGH5Cache ImageDownload Pandora GameErrorNoRecords afd Logs IGH5Cache ImageDownload Pandora RoleInfo SaveGames/Activity SaveGames/Match StatEventReportedFlag UpdateInfo Config/Android/AntiCheat.ini Paks/apollo_reslist.flist filelist.json puffer_temp puffer_res.eifs PufferFileList.json PufferTmpDir RoleInfo &> /dev/null
-
-cd /data/data/com.rekoo.pubgm &> /dev/null
-rm - rf app_appcache app_bugly app_crashrecord app_databases app_dex app_geolocation app_tbs app_textures app_webview app_webview_imsdk_inner_webview cache code_cache files files/tss_tmp cache/* &> /dev/null
-touch app_appcache app_bugly app_crashrecord app_databases app_dex app_geolocation app_tbs app_textures app_webview app_webview_imsdk_inner_webview cache code_cache files files/tss_tmp cache/* &> /dev/null
-
-cd /data/data/com.rekoo.pubgm/databases &> /dev/null
-rm rf beacon_db bugly_db_ config.db iMSDK.db tdm.db &> /dev/null
-touch rm rf beacon_db bugly_db_ config.db iMSDK.db tdm.db &> /dev/null
-   echo -e ""
-   echo -e "\e[33m Running..........[press CTRL+C to stop]"
-   echo ""
-   echo ""
-   echo -e "\e[36m Logs cleared $i Times, Looping......."
-   echo ""
-   echo""
-   echo -e "\e[36m Bypassed $k Times, ......."
-   
-   k=$i*$j
- sleep 300
-  ((i+++))  
-  ((i*j))
-  
+            
+            
+            
+            ;;      
+        "Quit")
+            exit 0
+            ;;
+        *) echo "invalid option $REPLY";;
+    esac
 done
-am start -n com.termux/com.termux.app.TermuxActivity &> /dev/null 
-clear & echo " ITS COFEE BREAK , IAM TIRED" && sleep 2 
-apt install sl &> /dev/null && sl && clear
-echo "ITS COFEE BREAK , IAM TIRED"
-echo "ANTIBAN OFFED"
-echo " YOU ARE PLAYING PUBG 1.30 HORUS DAMN, PLEASE RESTART GAME "
-echo "DONT FORGET TO SEND YOUR SS TO MR.GROOT"
-exit 0
 
 
 
-else        
-echo -e "\e[31m   Cant find pubg tw "      
-exit 0
-fi
-fi   
+
+
+
+
+
+
+
+
+            
 
           ;;
         "Fix-ObbError")
