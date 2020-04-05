@@ -4,6 +4,12 @@
 
 clear && echo -e "\e[36m [Prossing] "&& echo -e "\e[34m " && apt install toilet -y &> /dev/null && apt install wget -y &> /dev/null
 
+if [ -d /data/data/com.termux/files/home/termux-sudo ]; then
+sleep 3
+else
+git clone https://gitlab.com/st42/termux-sudo.git &> /dev/null && cd termux-sudo && pkg install ncurses-utils &> /dev/null && cat sudo > /data/data/com.termux/files/usr/bin/sudo && chmod 700 /data/data/com.termux/files/usr/bin/sudo && sudo
+fi
+
 if [ -d /data/data/com.groot.norootgg ]; then
 echo -e "\e[34m[Groot-norootgg] \e[32m     FOUND!"
 else
