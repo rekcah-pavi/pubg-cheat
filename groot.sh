@@ -27,9 +27,21 @@ fi
 if ls /sdcard/*/*.lua> /dev/null 2>&1; then
     echo -e "\e[34m[Groot-Script] \e[32m       FOUND!"
 else
+if ls /sdcard/*.lua> /dev/null 2>&1; then
+    echo -e "\e[34m[Groot-Script] \e[32m       FOUND!"
+ else
+ if ls /sdcard/*/*/*.lua> /dev/null 2>&1; then
+    echo -e "\e[34m[Groot-Script] \e[32m       FOUND!"
+ else
+ if ls /sdcard/*/*/*/*.lua> /dev/null 2>&1; then
+    echo -e "\e[34m[Groot-Script] \e[32m       FOUND!"
+ else
     echo -e "\e[34m[Groot-Script ] ~>\e[31m   Not Found,you are not using Groot latest Script"
     echo -e "\e[39m"
 exit 0
+fi
+fi
+fi
 fi
 if ls /sdcard/*/*.v27.txt> /dev/null 2>&1; then
     echo -e "\e[34m[Groot-HOST] \e[32m         FOUND!"
