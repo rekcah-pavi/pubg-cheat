@@ -54,7 +54,7 @@ else
     echo -e "\e[34m[Groot-HOST ] ~>\e[31m   Not Found,you are not using Groot latest host!"
     exit 0
 fi
-sleep 3
+sleep 1
 clear
 echo -e "\e[34m " 
 echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" && sleep 0.3	
@@ -75,6 +75,8 @@ select opt in "${options[@]}"
 do
     case $opt in
         "PUBG-GL")
+        echo " not support for now "
+        exit 0
  echo ""
  
 options=("Root" "Noroot" "Quit")
@@ -278,6 +280,8 @@ done
             
             ;;
         "PUBG-KR")
+        echo "not support for now"
+        exit 0
  echo ""   
 options=("Root" "Noroot" "Quit")
 select opt in "${options[@]}"
@@ -485,13 +489,14 @@ options=("Root" "Noroot" "Quit")
 select opt in "${options[@]}"
 do
     case $opt in
+    
         "Root")
-            
-            
-            echo -e "\e[36m[Root_Found] \e[34m Started root progress.. .." && sleep 2
-if [ -d /data/data/com.rekoo.pubgm ]; then
+echo -e "\e[36m[Root_Found] \e[34m Started root progress.. .." && sleep 2 
 
-echo -e "\e[36m [Found Pubg globel]" && sleep 1 && clear
+if [ -d /data/data/com.rekoo.pubgm ]; then
+echo -e "\e[36m [Found Pubg Taiwan]" && sleep 1 && clear
+echo -e "\e[36m [bypassig offline ban..........]" && sleep 1 && clear
+chmod 777 /data/data/com.rekoo.pubgm/lib/*.so
 echo -e "\e[36m [Injecting Fix crash]" && sleep 1 && clear
 cd /data/data/com.rekoo.pubgm && rm -rf app_crashrecord files && echo " globel anti-crash by groot " > files && echo " globel anti-crash by groot " > app_crashrecord
 echo -e "\e[36m [Injecting done with status1]" && sleep 1 && clear
@@ -500,8 +505,11 @@ am start -n com.groot.rootgg/com.groot.rootgg.MainActivity &> /dev/null
 echo -e "\e[36m [GG started]" && sleep 2 && echo "" && clear && echo -e "\e[36m [GG started]"
 am start -n com.termux/com.termux.app.TermuxActivity &> /dev/null 
 echo -e "\e[36m [Starting pubg]" && sleep 2 && echo "" && clear && echo -e "\e[36m [Started pubg]"
-am start -n com.rekoo.pubgm/com.epicgames.ue4.SplashActivity &> /dev/null && sleep 10
-echo -e "\e[36m [started pubg globel]" && sleep 5 && clear
+am start -n com.rekoo.pubgm/com.epicgames.ue4.SplashActivity &> /dev/null && sleep 7
+echo -e "\e[36m [bypassig offline ban..........]" && sleep 1 && clear
+chmod 000 /data/data/com.rekoo.pubgm/lib/*.so
+chmod 777 /data/data/com.rekoo.pubgm/lib/libcubehawk.so
+echo -e "\e[36m [started pubg Taiwan]" && sleep 7 && clear
 echo -e "\e[36m [starting cleaner]" && sleep 1
 echo -e "\e[31m   Press CTRL+C to stop!"      
 i=1
@@ -568,7 +576,8 @@ fi
             
             ;;
         "Noroot")
-            
+            echo "no root not for now"
+            exit 0
             echo -e "\e[36m[NoRoot_Found] \e[34m Started no root progress.. .." && sleep 2
 if [ -d /data/data/com.tencent.ig.com.pubg.krmobile.com.vng.pubgmobile.com.rekoo.pubgm.grootYT ]; then
 if [ -d /data/data/com.tencent.ig.com.pubg.krmobile.com.vng.pubgmobile.com.rekoo.pubgm.grootYT/system/data/0/com.rekoo.pubgm ]; then
