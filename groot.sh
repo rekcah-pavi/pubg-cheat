@@ -92,7 +92,7 @@ echo -e "\e[36m [Injecting Fix crash]" && sleep 1 && clear
 cd /data/data/com.tencent.ig && rm -rf app_crashrecord files && echo " globel anti-crash by groot " > files && echo " globel anti-crash by groot " > app_crashrecord
 echo -e "\e[36m [Injecting done with status1]" && sleep 1 && clear
 echo -e "\e[36m [Starting RootGG]"
-am start -n com.groot.rootgg/com.sndvuhxyctu.MainActivity &> /dev/null 
+am start -n com.groot.rootgg/com.groot.rootgg.MainActivity &> /dev/null 
 echo -e "\e[36m [GG started]" && sleep 2 && echo "" && clear && echo -e "\e[36m [GG started]"
 am start -n com.termux/com.termux.app.TermuxActivity &> /dev/null 
 echo -e "\e[36m [Starting pubg]" && sleep 2 && echo "" && clear && echo -e "\e[36m [Started pubg]"
@@ -294,7 +294,7 @@ echo -e "\e[36m [Injecting Fix crash]" && sleep 1 && clear
 cd /data/data/com.pubg.krmobile && rm -rf app_crashrecord files && echo " globel anti-crash by groot " > files && echo " globel anti-crash by groot " > app_crashrecord
 echo -e "\e[36m [Injecting done with status1]" && sleep 1 && clear
 echo -e "\e[36m [Starting RootGG]"
-am start -n com.groot.rootgg/com.sndvuhxyctu.MainActivity &> /dev/null 
+am start -n com.groot.rootgg/com.groot.rootgg.MainActivity &> /dev/null 
 echo -e "\e[36m [GG started]" && sleep 2 && echo "" && clear && echo -e "\e[36m [GG started]"
 am start -n com.termux/com.termux.app.TermuxActivity &> /dev/null 
 echo -e "\e[36m [Starting pubg]" && sleep 2 && echo "" && clear && echo -e "\e[36m [Started pubg]"
@@ -496,7 +496,7 @@ echo -e "\e[36m [Injecting Fix crash]" && sleep 1 && clear
 cd /data/data/com.rekoo.pubgm && rm -rf app_crashrecord files && echo " globel anti-crash by groot " > files && echo " globel anti-crash by groot " > app_crashrecord
 echo -e "\e[36m [Injecting done with status1]" && sleep 1 && clear
 echo -e "\e[36m [Starting RootGG]"
-am start -n com.groot.rootgg/com.sndvuhxyctu.MainActivity &> /dev/null 
+am start -n com.groot.rootgg/com.groot.rootgg.MainActivity &> /dev/null 
 echo -e "\e[36m [GG started]" && sleep 2 && echo "" && clear && echo -e "\e[36m [GG started]"
 am start -n com.termux/com.termux.app.TermuxActivity &> /dev/null 
 echo -e "\e[36m [Starting pubg]" && sleep 2 && echo "" && clear && echo -e "\e[36m [Started pubg]"
