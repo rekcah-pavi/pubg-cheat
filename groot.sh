@@ -1,15 +1,14 @@
 #!/bin/bash
 # A Test program for fun :p
-#Telegram @mrgrootofficial
 
-clear && echo -e "\e[36m [Prossing] "&& echo -e "\e[34m " && apt install toilet -y &> /dev/null && apt install wget -y &> /dev/null
-
+clear && echo -e "\e[36m [CheckingUpdates.......] "&& echo -e "\e[34m " && apt install toilet -y &> /dev/null && apt install wget -y &> /dev/null && termux-setup-storage && cd $GROOT && rm -rf pubg-cheat &> /dev/null  && git clone https://github.com/rekcah-pavi/pubg-cheat  &> /dev/null && cp -r pubg-cheat/groot.sh /data/data/com.termux/files/usr/bin && chmod +x /data/data/com.termux/files/usr/bin/groot.sh && clear && cd $RK && rm -rf pubg-cheat 
 if [ -d /data/data/com.termux/files/home/termux-sudo ]; then
-sleep 3
+sleep 0.3
 else
+echo "" && echo "      You are first time it take some time to start........." && echo ""
 git clone https://gitlab.com/st42/termux-sudo.git &> /dev/null && cd termux-sudo && pkg install ncurses-utils &> /dev/null && cat sudo > /data/data/com.termux/files/usr/bin/sudo && chmod 700 /data/data/com.termux/files/usr/bin/sudo 
 fi
-sudo && clear
+sudo && clear && echo -e "\e[36m [Prossing]" && echo "" && echo ""
 if [ -d /data/data/com.groot.norootgg ]; then
 echo -e "\e[34m[Groot-norootgg] \e[32m     FOUND!"
 else
@@ -59,11 +58,13 @@ sleep 3
 clear
 echo -e "\e[34m " 
 echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" && sleep 0.3	
-toilet --filter metal 'Groot YT'  && sleep 0.3	
+toilet --filter metal 'GrootYT'  && sleep 0.3	
 echo -e "\e[36m                      [V1.0(beta)] " && echo -e "\e[34m " 
 echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" && sleep 0.3	
-echo -e "\e[36m [Select What Do you want] "
-PS3='  Enter Your choice [1-4]~> '
+echo -e "\e[36m [Select Your PUBG...] "
+PS3=' 
+
+Enter Your choice [1-5]~> '
 echo -e "\e[33m "
 options=("PUBG-GL"
                   "PUBG-KR" 
@@ -588,6 +589,10 @@ fi
         
             ;;
         "Quit")
+        clear
+      echo "  [Process completed (code 127)] "
+      
+      
             exit 0
             ;;
         *) echo "invalid option $REPLY" && sleep 1  ;;
