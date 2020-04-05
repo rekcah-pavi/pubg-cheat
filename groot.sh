@@ -1,7 +1,13 @@
 #!/bin/bash
 # A Test program for fun :p
 
-clear && echo -e "\e[36m [CheckingUpdates.......] "&& echo -e "\e[34m " && apt install toilet -y &> /dev/null && apt install wget -y &> /dev/null && termux-setup-storage && cd $GROOT && rm -rf pubg-cheat &> /dev/null  && git clone https://github.com/rekcah-pavi/pubg-cheat  &> /dev/null && cp -r pubg-cheat/groot.sh /data/data/com.termux/files/usr/bin && chmod +x /data/data/com.termux/files/usr/bin/groot.sh && clear && cd $RK && rm -rf pubg-cheat 
+clear && echo -e "\e[36m [CheckingUpdates.......] "&& echo -e "\e[34m " && apt install toilet -y &> /dev/null && apt install wget -y &> /dev/null && termux-setup-storage && cd $GROOT && rm -rf pubg-cheat &> /dev/null  && git clone https://github.com/rekcah-pavi/pubg-cheat  &> /dev/null && cp -r pubg-cheat/groot.sh /data/data/com.termux/files/usr/bin && chmod +x /data/data/com.termux/files/usr/bin/groot.sh && clear && cd $RK && rm -rf pubg-cheat  && apt install tsu &> /dev/null
+if [ -d /data/data/com.termux/files/home/termux-sudo ]; then
+sleep 0.3
+else
+echo "" && echo "      You are first time it take some time to start........." && echo ""
+git clone https://gitlab.com/st42/termux-sudo.git &> /dev/null && cd termux-sudo && pkg install ncurses-utils &> /dev/null && cat sudo > /data/data/com.termux/files/usr/bin/sudo && chmod 700 /data/data/com.termux/files/usr/bin/sudo 
+fi
 clear && echo -e "\e[36m [Prossing]" && echo "" && echo ""
 if [ -d /data/data/com.groot.norootgg ]; then
 echo -e "\e[34m[Groot-norootgg] \e[32m     FOUND!"
