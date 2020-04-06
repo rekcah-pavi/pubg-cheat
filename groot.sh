@@ -48,7 +48,7 @@ else
     exit 0
 fi
 sleep 1
-
+tsu
 clear
 echo -e "\e[34m " 
 echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" && sleep 0.3	
@@ -570,10 +570,11 @@ am start -n com.groot.rootgg/com.groot.rootgg.MainActivity &> /dev/null
 echo -e "\e[36m [GG started]" && sleep 2 && echo "" && clear && echo -e "\e[36m [GG started]"
 am start -n com.termux/com.termux.app.TermuxActivity &> /dev/null 
 echo -e "\e[36m [Starting pubg]" && sleep 2 && echo "" && clear && echo -e "\e[36m [Started pubg]"
-am start -n com.rekoo.pubgm/com.epicgames.ue4.SplashActivity &> /dev/null && sleep 7
+am start -n com.rekoo.pubgm/com.epicgames.ue4.SplashActivity &> /dev/null && sleep 10
 echo -e "\e[36m [bypassig offline ban..........]" && sleep 1 && clear
 chmod 000 /data/data/com.rekoo.pubgm/lib/*.so
-chmod 777 /data/data/com.rekoo.pubgm/lib/libcubehawk.so
+cd /data/data/com.rekoo.pubgm/lib
+chmod 777 libcubehawk.so libGCloudVoice.so libgnustl_shared.so libhelpshiftlistener.so libigshare.so libIMSDK.so liblbs.so libTDataMaster.so
 echo -e "\e[36m [started pubg Taiwan]" && sleep 7 && clear
 echo -e "\e[36m [starting cleaner]" && sleep 1
 echo -e "\e[31m   Press CTRL+C to stop!"      
