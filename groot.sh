@@ -48,7 +48,7 @@ else
     exit 0
 fi
 sleep 1
-tsu
+
 clear
 echo -e "\e[34m " 
 echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" && sleep 0.3	
