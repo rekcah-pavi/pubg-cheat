@@ -573,7 +573,7 @@ echo -e "\e[36m [Starting pubg]" && sleep 2 && echo "" && clear && echo -e "\e[3
 am start -n com.rekoo.pubgm/com.epicgames.ue4.SplashActivity &> /dev/null && sleep 10
 echo -e "\e[36m [bypassig offline ban..........]" && sleep 1 && clear
 cd /data/data/com.rekoo.pubgm/lib
-chmod 000 libzlib.so libzip.so libtprt.so libtersafe.so 
+chmod 000 libtersafe.so 
 echo -e "\e[36m [started pubg Taiwan]" && sleep 7 && clear
 echo -e "\e[36m [starting cleaner]" && sleep 1
 echo -e "\e[31m   Press CTRL+C to stop!"      
