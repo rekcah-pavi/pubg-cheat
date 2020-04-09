@@ -13,10 +13,6 @@ else
  exit 0
 fi
 fi
-
-
-####
-echo "
 if [ -d /data/data/com.groot.hostloader ]; then
 echo -e "\e[34m[Groot-Hostloader] \e[32m   FOUND!"
 else
@@ -24,10 +20,6 @@ else
     echo -e "\e[39m"
 exit 0
 fi
-"
-####
-
-
 if ls /sdcard/*/*.lua> /dev/null 2>&1; then
     echo -e "\e[34m[Groot-Script] \e[32m       FOUND!"
 else
@@ -49,16 +41,29 @@ fi
 fi
 
 
-###
-echo "
-if ls /sdcard/*/*.v27.txt> /dev/null 2>&1; then
+
+if ls /sdcard/*/*.v3.txt> /dev/null 2>&1; then
     echo -e "\e[34m[Groot-HOST] \e[32m         FOUND!"
 else
+     if ls /sdcard/*.v3.txt> /dev/null 2>&1; then
+    echo -e "\e[34m[Groot-Script] \e[32m       FOUND!"
+ else
+ if ls /sdcard/*/*/*.v3.txt> /dev/null 2>&1; then
+    echo -e "\e[34m[Groot-Script] \e[32m       FOUND!"
+ else
+ if ls /sdcard/*/*/*/*.v3.txt> /dev/null 2>&1; then
+    echo -e "\e[34m[Groot-Script] \e[32m       FOUND!"
+ else
     echo -e "\e[34m[Groot-HOST ] ~>\e[31m   Not Found,you are not using Groot latest host!"
-    #exit 0
+    echo -e "\e[39m"
+exit 0
 fi
-"
-###
+fi
+fi
+fi
+    
+
+
 
 
 sleep 1
