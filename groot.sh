@@ -644,6 +644,8 @@ fi
           ;;
         "Fix-ObbError")
         if [[ $EUID -ne 0 ]]; then
+ echo ""
+ echo " Copying it may take10 minute"
 cp /sdcard/*.lua /sdcard/GrootYT/.dualsdcard> /dev/null 2>&1
 cp /sdcard/*/*.lua /sdcard/GrootYT/.dualsdcard> /dev/null 2>&1
 cp /sdcard/*/*/*.lua /sdcard/GrootYT/.dualsdcard> /dev/null 2>&1
@@ -656,7 +658,8 @@ cp -r /storage/emulated/0/Android/data/com.vng.pubgmobile /sdcard/GrootYT/.duals
 echo " Obb error Fixed"
 exit 0
 else
-echo " nani there is no error"
+echo "  My obb finer logic break "
+echo " nani there is no obb error ahhhhhhhhhh"
 exit 0
 fi
         
