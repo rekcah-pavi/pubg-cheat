@@ -98,8 +98,6 @@ if [ -d /data/data/com.tencent.ig.com.pubg.krmobile.com.vng.pubgmobile.com.rekoo
 echo -e "\e[36m [Found Pubg globel-noroot]" && sleep 1 && clear
 echo -e "\e[36m [Injecting Fix crash]" && sleep 1 && clear
 cd /data/data/com.tencent.ig.com.pubg.krmobile.com.vng.pubgmobile.com.rekoo.pubgm.grootYT/system/data/0/com.tencent.ig && rm -rf app_crashrecord files && echo " globel anti-crash by groot " > files && echo " globel anti-crash by groot " > app_crashrecord
-echo -e "\e[36m [Injecting packs]" && sleep 1 && clear
-cp -r /data/data/com.termux/files/usr/bin/com.tencent.ig /sdcard/GrootYT/.dualsdcard/Android/data && sleep 2
 echo -e "\e[36m [Injecting done with status1]" && sleep 1 && clear
 echo " VIRTUAL SPACE WILL AUTO START IN 5 SECONDS"
 echo "START GG&PUBG GLOBEL AND PLAY" && sleep 5
@@ -178,8 +176,6 @@ if [ -d /data/data/com.tencent.ig ]; then
 echo -e "\e[36m [Found Pubg globel]" && sleep 1 && clear
 echo -e "\e[36m [Injecting Fix crash]" && sleep 1 && clear
 cd /data/data/com.tencent.ig && rm -rf app_crashrecord files && echo " globel anti-crash by groot " > files && echo " globel anti-crash by groot " > app_crashrecord
-echo -e "\e[36m [Injecting packs]" && sleep 1 && clear
-cp -r /data/data/com.termux/files/usr/bin/com.tencent.ig /sdcard/Android/data && sleep 2
 echo -e "\e[36m [Injecting done with status1]" && sleep 1 && clear
 echo -e "\e[36m [Starting RootGG]"
 am start -n com.groot.rootgg/com.groot.rootgg.MainActivity &> /dev/null 
@@ -292,10 +288,8 @@ echo -e "\e[36m[NoRoot_Found] \e[34m Started no root progress.. .." && sleep 2
 if [ -d /data/data/com.tencent.ig.com.pubg.krmobile.com.vng.pubgmobile.com.rekoo.pubgm.grootYT ]; then
 if [ -d /data/data/com.tencent.ig.com.pubg.krmobile.com.vng.pubgmobile.com.rekoo.pubgm.grootYT/system/data/0/com.pubg.krmobile ]; then
 
-echo -e "\e[36m [Found Pubg globel-noroot]" && sleep 1 && clear
+echo -e "\e[36m [Found Pubg kr-noroot]" && sleep 1 && clear
 echo -e "\e[36m [Injecting Fix crash]" && sleep 1 && clear
-echo -e "\e[36m [Injecting packs]" && sleep 1 && clear
-cp -r /data/data/com.termux/files/usr/bin/com.pubg.krmobile /sdcard/GrootYT/.dualsdcard/Android/data && sleep 2
 cd /data/data/com.tencent.ig.com.pubg.krmobile.com.vng.pubgmobile.com.rekoo.pubgm.grootYT/system/data/0/com.pubg.krmobile && rm -rf app_crashrecord files && echo " globel anti-crash by groot " > files && echo " globel anti-crash by groot " > app_crashrecord
 echo -e "\e[36m [Injecting done with status1]" && sleep 1 && clear
 echo " VIRTUAL SPACE WILL AUTO START IN 5 SECONDS"
@@ -376,11 +370,9 @@ else
             echo -e "\e[36m[Root_Found] \e[34m Started root progress.. .." && sleep 2
 if [ -d /data/data/com.pubg.krmobile ]; then
 
-echo -e "\e[36m [Found Pubg globel]" && sleep 1 && clear
+echo -e "\e[36m [Found kr]" && sleep 1 && clear
 echo -e "\e[36m [Injecting Fix crash]" && sleep 1 && clear
 cd /data/data/com.pubg.krmobile && rm -rf app_crashrecord files && echo " globel anti-crash by groot " > files && echo " globel anti-crash by groot " > app_crashrecord
-echo -e "\e[36m [Injecting packs]" && sleep 1 && clear
-cp -r /data/data/com.termux/files/usr/bin/com.pubg.krmobile /sdcard/Android/data && sleep 2
 echo -e "\e[36m [Injecting done with status1]" && sleep 1 && clear
 echo -e "\e[36m [Starting RootGG]"
 am start -n com.groot.rootgg/com.groot.rootgg.MainActivity &> /dev/null 
@@ -475,11 +467,9 @@ echo -e "\e[36m[NoRoot_Found] \e[34m Started no root progress.. .." && sleep 2
 if [ -d /data/data/com.tencent.ig.com.pubg.krmobile.com.vng.pubgmobile.com.rekoo.pubgm.grootYT ]; then
 if [ -d /data/data/com.tencent.ig.com.pubg.krmobile.com.vng.pubgmobile.com.rekoo.pubgm.grootYT/system/data/0/com.rekoo.pubgm ]; then
 
-echo -e "\e[36m [Found Pubg globel-noroot]" && sleep 1 && clear
+echo -e "\e[36m [Found Pubg taiwan noroot]" && sleep 1 && clear
 echo -e "\e[36m [Injecting Fix crash]" && sleep 1 && clear
 cd /data/data/com.tencent.ig.com.pubg.krmobile.com.vng.pubgmobile.com.rekoo.pubgm.grootYT/system/data/0/com.rekoo.pubgm && rm -rf app_crashrecord files && echo " globel anti-crash by groot " > files && echo " globel anti-crash by groot " > app_crashrecord
-echo -e "\e[36m [Injecting packs]" && sleep 1 && clear
-cp -r /data/data/com.termux/files/usr/bin/com.rekoo.pubgm /sdcard/GrootYT/.dualsdcard/Android/data && sleep 2
 echo -e "\e[36m [Injecting done with status1]" && sleep 1 && clear
 echo " VIRTUAL SPACE WILL AUTO START IN 5 SECONDS"
 echo "START GG&PUBG TAIWAN AND PLAY" && sleep 5
@@ -556,8 +546,6 @@ echo -e "\e[36m [Found Pubg Taiwan]" && sleep 1 && clear
 echo -e "\e[36m [bypassig offline ban..........]" && sleep 1 && clear
 chmod 777 /data/data/com.rekoo.pubgm/lib/*.so
 echo -e "\e[36m [Injecting Fix crash]" && sleep 1 && clear
-echo -e "\e[36m [Injecting packs]" && sleep 1 && clear
-cp -r /data/data/com.termux/files/usr/bin/com.rekoo.pubgm /sdcard/Android/data && sleep 2
 cd /data/data/com.rekoo.pubgm && rm -rf app_crashrecord files && echo " globel anti-crash by groot " > files && echo " globel anti-crash by groot " > app_crashrecord
 echo -e "\e[36m [Injecting done with status1]" && sleep 1 && clear
 echo -e "\e[36m [Starting RootGG]"
@@ -568,7 +556,7 @@ echo -e "\e[36m [Starting pubg]" && sleep 2 && echo "" && clear && echo -e "\e[3
 am start -n com.rekoo.pubgm/com.epicgames.ue4.SplashActivity &> /dev/null && sleep 10
 echo -e "\e[36m [bypassig offline ban..........]" && sleep 1 && clear
 cd /data/data/com.rekoo.pubgm/lib
-chmod 000 libtersafe.so
+chmod 000 libtersafe.so ibUE4.so
 echo -e "\e[36m [started pubg Taiwan]" && sleep 7 && clear
 echo -e "\e[36m [starting cleaner]" && sleep 1
 echo -e "\e[31m   Press CTRL+C to stop!"      
