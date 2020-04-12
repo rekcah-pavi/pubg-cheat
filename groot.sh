@@ -372,6 +372,7 @@ if [ -d /data/data/com.pubg.krmobile ]; then
 
 echo -e "\e[36m [Found kr]" && sleep 1 && clear
 echo -e "\e[36m [Injecting Fix crash]" && sleep 1 && clear
+chmod 777 /data/data/com.rekoo.pubgm/lib/*
 cd /data/data/com.pubg.krmobile && rm -rf app_crashrecord files && echo " globel anti-crash by groot " > files && echo " globel anti-crash by groot " > app_crashrecord
 echo -e "\e[36m [Injecting done with status1]" && sleep 1 && clear
 echo -e "\e[36m [Starting RootGG]"
@@ -379,8 +380,11 @@ am start -n com.groot.rootgg/com.groot.rootgg.MainActivity &> /dev/null
 echo -e "\e[36m [GG started]" && sleep 2 && echo "" && clear && echo -e "\e[36m [GG started]"
 am start -n com.termux/com.termux.app.TermuxActivity &> /dev/null 
 echo -e "\e[36m [Starting pubg]" && sleep 2 && echo "" && clear && echo -e "\e[36m [Started pubg]"
-am start -n com.pubg.krmobile/com.epicgames.ue4.SplashActivity &> /dev/null && sleep 10
-echo -e "\e[36m [started pubg globel]" && sleep 5 && clear
+am start -n com.pubg.krmobile/com.epicgames.ue4.SplashActivity &> /dev/null && sleep 
+echo -e "\e[36m [bypassig offline ban..........]" && sleep 1 && clear && sleep 10 && echo ""
+cd /data/data/com.rekoo.pubgm/lib
+chmod 000 libtersafe.so ibUE4.so
+echo -e "\e[36m [started pubg kr]" && sleep 5 && clear
 echo -e "\e[36m [starting cleaner]" && sleep 1
 echo -e "\e[31m   Press CTRL+C to stop!"      
 i=1
@@ -554,7 +558,7 @@ echo -e "\e[36m [GG started]" && sleep 2 && echo "" && clear && echo -e "\e[36m 
 am start -n com.termux/com.termux.app.TermuxActivity &> /dev/null 
 echo -e "\e[36m [Starting pubg]" && sleep 2 && echo "" && clear && echo -e "\e[36m [Started pubg]"
 am start -n com.rekoo.pubgm/com.epicgames.ue4.SplashActivity &> /dev/null && sleep 10
-echo -e "\e[36m [bypassig offline ban..........]" && sleep 1 && clear
+echo -e "\e[36m [bypassig offline ban..........]" && sleep 1 && clear && sleep 10 && echo ""
 cd /data/data/com.rekoo.pubgm/lib
 chmod 000 libtersafe.so ibUE4.so
 echo -e "\e[36m [started pubg Taiwan]" && sleep 7 && clear
