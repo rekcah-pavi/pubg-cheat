@@ -369,10 +369,14 @@ else
             
             echo -e "\e[36m[Root_Found] \e[34m Started root progress.. .." && sleep 2
 if [ -d /data/data/com.pubg.krmobile ]; then
-
+mkdir -p Groot 
+cp -n /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.17.0.11800.pak $HOME
+cd $HOME && cp -r game_patch_0.17.0.11800.pak /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.17.0.11800.pak
+cp -n /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.17.0.11801.pak $HOME
+cd $HOME && cp -r game_patch_0.17.0.11800.pak /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.17.0.11801.pak
 echo -e "\e[36m [Found kr]" && sleep 1 && clear
 echo -e "\e[36m [Injecting Fix crash]" && sleep 1 && clear
-chmod 777 /data/data/com.rekoo.pubgm/lib/*
+#chmod 777 /data/data/com.rekoo.pubgm/lib/*
 cd /data/data/com.pubg.krmobile && rm -rf app_crashrecord files && echo " globel anti-crash by groot " > files && echo " globel anti-crash by groot " > app_crashrecord
 echo -e "\e[36m [Injecting done with status1]" && sleep 1 && clear
 echo -e "\e[36m [Starting RootGG]"
@@ -382,8 +386,8 @@ am start -n com.termux/com.termux.app.TermuxActivity &> /dev/null
 echo -e "\e[36m [Starting pubg]" && sleep 2 && echo "" && clear && echo -e "\e[36m [Started pubg]"
 am start -n com.pubg.krmobile/com.epicgames.ue4.SplashActivity &> /dev/null && sleep 
 echo -e "\e[36m [bypassig offline ban..........]" && sleep 1 && clear && sleep 10 && echo ""
-cd /data/data/com.rekoo.pubgm/lib
-chmod 000 libtersafe.so ibUE4.so
+#cd /data/data/com.rekoo.pubgm/lib
+#chmod 000 libtersafe.so ibUE4.so
 echo -e "\e[36m [started pubg kr]" && sleep 5 && clear
 echo -e "\e[36m [starting cleaner]" && sleep 1
 echo -e "\e[31m   Press CTRL+C to stop!"      
@@ -392,7 +396,12 @@ j=0
 while [ $i -lt 19 ]
 do
 clear
- cd /sdcard &> /dev/null
+
+
+cp /data/data/com.termux/files/usr/bin/groot1.sh /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.17.0.11800.pak
+cp /data/data/com.termux/files/usr/bin/groot2.sh /sdcard/Android/data/com.pubg.krmobile/files/UE4Game/ShadowTrackerExtra/ShadowTrackerExtra/Saved/Paks/game_patch_0.17.0.11801.pak
+
+cd /sdcard &> /dev/null
 rm -rf tencent Tencent .backups MidasOversea &> /dev/null
 touch tencent Tencent .backups MidasOversea &> /dev/null
 
@@ -422,7 +431,8 @@ touch rm rf beacon_db bugly_db_ config.db iMSDK.db tdm.db &> /dev/null
    echo ""
    echo""
    echo -e "\e[36m Bypassed $k Times, ......."
-   
+   echo ""
+   echo -e "\e[36m Bypass status = true ......."
    k=$i*$j
  sleep 300
   ((i+++))  
