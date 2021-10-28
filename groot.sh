@@ -285,3 +285,12 @@ else
 echo -e "\e[31m   Cant find bgmi"      
 exit 0
 fi
+;;
+        "Quit")
+        clear
+      echo "  [Process completed (code 127)] "           
+            exit 0
+            ;;
+        *) echo "invalid option $REPLY" && sleep 1  ;;
+    esac
+done
