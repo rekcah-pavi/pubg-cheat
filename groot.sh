@@ -36,8 +36,10 @@ sleep 1
 REQUIRED_PKG="toilet" 
 PKG_OK=$(dpkg-query -W --showformat='${Status}\n' $REQUIRED_PKG|grep "install ok installed") 
 if [ "" = "$PKG_OK" ]; then 
+echo -e "\e[34m[*] \e[32m Press Enter if anything  asked!" && sleep 3
 apt update -y && apt upgrade -y
-echo "Restart script"
+clear
+echo -e "\e[34m[*] \e[32m Restart Script"
 exit 0
 fi
 
