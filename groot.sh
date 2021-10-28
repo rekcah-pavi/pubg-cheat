@@ -54,7 +54,8 @@ echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" && sleep 0.3
 
 if [[ $EUID -ne 0 ]]; then
 echo " no root comming soon...!"
-echo " If you are root and getting this error run terminal as root by tsu " 
+echo " If you are root and getting this error type tsu in terminal  and try agin / run terminal as root" 
+tsu
 exit 0          
 fi
 
