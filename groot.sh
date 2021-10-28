@@ -46,7 +46,7 @@ clear
 echo -e "\e[36m " 
 echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" && sleep 0.3	
 toilet --filter metal 'GrootYT'  && sleep 0.3	
-echo -e "\e[34m                     [V2.0] " && echo -e "\e[36m " 
+echo -e "\e[34m                     [V2.1] " && echo -e "\e[36m " 
 echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" && sleep 0.3	
 
 
